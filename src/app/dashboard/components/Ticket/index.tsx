@@ -1,13 +1,24 @@
+import { ICustomerProps } from "@/utils/customer.type";
+import { ITicketProps } from "@/utils/ticket.type";
 import { FiTrash2, FiFile } from "react-icons/fi";
 
-export const TicketItem = () => {
+interface ITicketItemProps {
+  ticket: ITicketProps;
+  customer: ICustomerProps | null;
+}
+
+export const TicketItem = ({ customer, ticket }: ITicketItemProps) => {
   return (
     <>
       <tr className="border-b-2 border-b-slate-200 h-16 last:border-b-0 bg-slate-100 hover:bg-slate-200 duration-300">
-        <td className="text-left pl-1">Mercado Silva</td>
-        <td className="text-left hidden sm:table-cell">29/03/2024</td>
+        <td className="text-left pl-1">{customer?.name}</td>
+        <td className="text-left hidden sm:table-cell">
+          {ticket.created_at?.toLocaleDateString("pt-br")}
+        </td>
         <td className="text-left">
-          <span className="bg-green-500 px-2 py-1 rounded">ABERTO</span>
+          <span className="bg-green-500 px-2 py-1 rounded">
+            {ticket.status}
+          </span>
         </td>
         <td className="text-left">
           <button className="mr-2">
