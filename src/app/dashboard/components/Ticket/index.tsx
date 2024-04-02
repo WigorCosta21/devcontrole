@@ -1,10 +1,12 @@
 "use client";
 
+import { useContext } from "react";
+import { FiCheckSquare, FiFile } from "react-icons/fi";
+import { useRouter } from "next/navigation";
+import { ModalContex } from "@/providers/moda";
 import { ICustomerProps } from "@/utils/customer.type";
 import { ITicketProps } from "@/utils/ticket.type";
-import { FiCheckSquare, FiFile } from "react-icons/fi";
 import { api } from "@/lib/api";
-import { useRouter } from "next/navigation";
 
 interface ITicketItemProps {
   ticket: ITicketProps;
@@ -13,10 +15,11 @@ interface ITicketItemProps {
 
 export const TicketItem = ({ customer, ticket }: ITicketItemProps) => {
   const router = useRouter();
+  const { handleModalVisible, setDetailTicket } = useContext(ModalContex);
 
   const handleChangeStatus = async () => {
     try {
-      const response = await api.patch("/api/ticket", {
+      await api.patch("/api/ticket", {
         id: ticket.id,
       });
 
@@ -24,6 +27,14 @@ export const TicketItem = ({ customer, ticket }: ITicketItemProps) => {
     } catch (err) {
       console.log(err);
     }
+  };
+
+  const handleOpenModal = () => {
+    handleModalVisible();
+    setDetailTicket({
+      customer: customer,
+      ticket: ticket,
+    });
   };
 
   return (
@@ -42,7 +53,7 @@ export const TicketItem = ({ customer, ticket }: ITicketItemProps) => {
           <button className="mr-3" onClick={handleChangeStatus}>
             <FiCheckSquare size={24} color="#131313" />
           </button>
-          <button>
+          <button onClick={handleOpenModal}>
             <FiFile size={24} color="#3b82f6" />
           </button>
         </td>
