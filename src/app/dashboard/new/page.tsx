@@ -14,6 +14,9 @@ const NewTicket = async () => {
     where: {
       userId: session.user.id,
     },
+    orderBy: {
+      created_at: "desc",
+    },
   });
 
   const handleRegisterTicket = async (formData: FormData) => {
