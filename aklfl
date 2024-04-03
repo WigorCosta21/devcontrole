@@ -1,0 +1,143 @@
+[33mcommit 91e32c398c1415a8147e6a1781843badd6461c3f[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m)[m
+Author: wigor <wigor21@hotmail.com>
+Date:   Tue Apr 2 21:42:11 2024 -0300
+
+    feat: created formTicket component
+
+[33mcommit 597cbbb9767d24f39815f44369d873bf0a7142f6[m
+Author: wigor <wigor21@hotmail.com>
+Date:   Tue Apr 2 21:33:39 2024 -0300
+
+    feat: create open page
+
+[33mcommit 15cb2a9ab85b4c3921fc097f98f3b569e08976a4[m
+Author: wigor <wigor21@hotmail.com>
+Date:   Mon Apr 1 21:34:45 2024 -0300
+
+    showing information in the modal
+
+[33mcommit 45a5ff8893f6d7bfdae6550b8c2e04a6a953efe2[m
+Author: wigor <wigor21@hotmail.com>
+Date:   Mon Apr 1 20:59:17 2024 -0300
+
+    feat: created modal context
+
+[33mcommit 2ccb0cf5b3552b6605c80a9a72d04523ea50be4f[m
+Author: wigor <wigor21@hotmail.com>
+Date:   Sun Mar 31 17:44:02 2024 -0300
+
+    feat: updating tickets status
+
+[33mcommit e3f03ccc61b73080e50bc0d58ba68e2ba2aa0ea4[m
+Author: wigor <wigor21@hotmail.com>
+Date:   Sun Mar 31 17:21:09 2024 -0300
+
+    feat: listing tickets
+
+[33mcommit 25db9c27e3771f2caeba631809f2723adb10bbe2[m
+Author: wigor <wigor21@hotmail.com>
+Date:   Sun Mar 31 17:09:37 2024 -0300
+
+    feat: registering ticket in the database
+
+[33mcommit d671551e7e57bfbecead933dc3d553c32414c9fd[m
+Author: wigor <wigor21@hotmail.com>
+Date:   Sat Mar 30 19:31:34 2024 -0300
+
+    created new ticket page
+
+[33mcommit 77505905726547030bdc4ea9eaba4abb2b3cd1f8[m
+Author: wigor <wigor21@hotmail.com>
+Date:   Sat Mar 30 00:40:05 2024 -0300
+
+    feat: delete customer
+
+[33mcommit 5b137181f438ffd20a7cbe50c7d680684f0efa72[m
+Author: wigor <wigor21@hotmail.com>
+Date:   Sat Mar 30 00:15:22 2024 -0300
+
+    feat: listing customers
+
+[33mcommit 423e065830db8f45c7b4ae247f616eab76a8d0f7[m
+Author: wigor <wigor21@hotmail.com>
+Date:   Fri Mar 29 22:39:08 2024 -0300
+
+    feat: registering customer
+
+[33mcommit acc2ffe3f1ea196fac2437587331a8da51314c04[m
+Author: wigor <wigor21@hotmail.com>
+Date:   Fri Mar 29 22:26:22 2024 -0300
+
+    feat: created backend route
+
+[33mcommit cbf23c38e49302b754bd4e4375ffe2007d1bb111[m
+Author: wigor <wigor21@hotmail.com>
+Date:   Fri Mar 29 19:34:14 2024 -0300
+
+    feat: created custom input
+
+[33mcommit 305a39b7c061b4149567d7509337e1532ca2da52[m
+Author: wigor <wigor21@hotmail.com>
+Date:   Fri Mar 29 19:13:21 2024 -0300
+
+    feat: configuring zod
+
+[33mcommit 7ba6b1b65378866943dc24e427b5f211ed011db4[m
+Author: wigor <wigor21@hotmail.com>
+Date:   Fri Mar 29 18:52:17 2024 -0300
+
+    feat: created customer page
+
+[33mcommit 8475f9f4d71282609f03f219d638ee38df48eaf0[m
+Author: wigor <wigor21@hotmail.com>
+Date:   Fri Mar 29 18:39:51 2024 -0300
+
+    created call table
+
+[33mcommit a81af5680320991c8a38e107377ed9f857d2ba4b[m
+Author: wigor <wigor21@hotmail.com>
+Date:   Fri Mar 29 18:22:37 2024 -0300
+
+    feat: created header on dashboard page
+
+[33mcommit f07264561ad57ac1be5ebfd97033fc5e974b35b2[m
+Author: wigor <wigor21@hotmail.com>
+Date:   Fri Mar 29 15:28:40 2024 -0300
+
+    feat: created login and logout funcion
+
+[33mcommit 408412d6a0f86d421ca50a6cff8c451cb9c3769f[m
+Author: wigor <wigor21@hotmail.com>
+Date:   Fri Mar 29 15:06:58 2024 -0300
+
+    feat: creating database
+
+[33mcommit 61e3c8bb8fce4eb2861f7b00051e236341f1ccd8[m
+Author: wigor <wigor21@hotmail.com>
+Date:   Fri Mar 29 14:47:30 2024 -0300
+
+    feat: configuring authentication system
+
+[33mcommit 315f3893d378a23a79367f39573ff1224e5fac43[m
+Author: wigor <wigor21@hotmail.com>
+Date:   Thu Mar 28 23:46:45 2024 -0300
+
+    feat: created home page
+
+[33mcommit 2f790ab4170c11569ee2ef320e6723ea1ffdd957[m
+Author: wigor <wigor21@hotmail.com>
+Date:   Wed Mar 27 23:25:41 2024 -0300
+
+    feat: created header components
+
+[33mcommit ec8e75fe1858b8352163bc84284268d3312bfc48[m
+Author: wigor <wigor21@hotmail.com>
+Date:   Wed Mar 27 23:15:54 2024 -0300
+
+    chore: starting project
+
+[33mcommit 3fce784c55b91da74da16332b35dc0a611675690[m
+Author: wigor <wigor21@hotmail.com>
+Date:   Wed Mar 27 23:11:28 2024 -0300
+
+    Initial commit from Create Next App
