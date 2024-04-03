@@ -6,6 +6,7 @@ import { zodResolver } from "@hookform/resolvers/zod";
 import { useForm } from "react-hook-form";
 import { FiSearch, FiX } from "react-icons/fi";
 import { Input } from "@/components/Input";
+import { FormTicket } from "./components/FormTicket";
 
 const schema = z.object({
   email: z
@@ -72,6 +73,8 @@ const OpenTicket = () => {
             </div>
           </form>
         )}
+
+        {customer !== null && <FormTicket />}
       </main>
     </div>
   );
