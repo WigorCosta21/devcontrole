@@ -5,6 +5,7 @@ import { authOptions } from "@/lib/auth";
 import { Container } from "@/components/Container";
 import { TicketItem } from "./components/Ticket";
 import prismaClient from "@/lib/prisma";
+import { ButtonReflesh } from "./components/Button";
 
 const Dashboard = async () => {
   const session = await getServerSession(authOptions);
@@ -15,11 +16,16 @@ const Dashboard = async () => {
 
   const tickets = await prismaClient.ticket.findMany({
     where: {
-      userId: session.user.id,
       status: "ABERTO",
+      customer: {
+        userId: session.user.id,
+      },
     },
     include: {
       customer: true,
+    },
+    orderBy: {
+      created_at: "desc",
     },
   });
 
@@ -28,12 +34,16 @@ const Dashboard = async () => {
       <main className="mt-9 mb-2">
         <div className="flex items-center justify-between">
           <h1 className="text-3xl font-bold">Chamados</h1>
-          <Link
-            href="/dashboard/new"
-            className="bg-blue-500 px-4 py-2 rounded text-white"
-          >
-            Abrir chamado
-          </Link>
+          <div className="flex items-center gap-3">
+            <ButtonReflesh />
+
+            <Link
+              href="/dashboard/new"
+              className="bg-blue-500 px-4 py-1 rounded text-white"
+            >
+              Abrir chamado
+            </Link>
+          </div>
         </div>
 
         <table className="min-w-full my-2">
