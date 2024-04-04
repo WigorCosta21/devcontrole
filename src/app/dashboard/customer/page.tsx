@@ -6,7 +6,7 @@ import prismaClient from "@/lib/prisma";
 import { Container } from "@/components/Container";
 import { CardCustomer } from "./components/Card";
 
-export const Customer = async () => {
+const Customer = async () => {
   const session = await getServerSession(authOptions);
 
   if (!session || !session.user) {
